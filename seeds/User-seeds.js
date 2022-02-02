@@ -4,7 +4,7 @@ const { User } = require('../models');
 const userData = [
   {
     user_id: 1,
-    user_name: "Bill Bever"
+    user_name: "Billy Beaver"
   },
   {
     review_id: 2,
