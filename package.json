@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^15.0.0",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.15.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
+  },
+
+  "name": "restaurant-journal-project-ii",
+  "description": "Second project",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mully7773/Restaurant-Journal-Project-II.git"
+  },
+  
+  "keywords": [],
+  "author": "Nick, Justin, Eric",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mully7773/Restaurant-Journal-Project-II/issues"
+  },
+  "homepage": "https://github.com/Mully7773/Restaurant-Journal-Project-II#readme"
+}
