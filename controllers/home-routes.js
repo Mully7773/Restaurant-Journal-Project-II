@@ -4,7 +4,8 @@ router.get('/',  (req, res) => {
     res.render('index')
   });
 
-  router.get('/reviews',  (req, res) => {
+  router.get('/reviews/:id',  (req, res) => {
+    
     res.render('review')
   });
 
