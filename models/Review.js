@@ -11,7 +11,19 @@ Review.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    review_note: {
+    restaurant_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    order: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    rating: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    experience: {
       type: DataTypes.STRING,
       allowNull: false,
     },
