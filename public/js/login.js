@@ -1,7 +1,8 @@
 const loginFormHandler = async (event) => {
     event.preventDefault();
-  
+  console.log("test");
     // Grab the values from the login form
+    
     const email = document.querySelector('#email').value.trim();
     const password = document.querySelector('#passWord').value.trim();
   
@@ -22,4 +23,7 @@ const loginFormHandler = async (event) => {
     }
   };
 
-  document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+  var x = document.querySelector('.login-form')
+  console.log(x)
+  x.addEventListener('click', loginFormHandler);
+  x.addEventListener('submit', loginFormHandler);
