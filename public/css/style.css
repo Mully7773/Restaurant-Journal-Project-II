@@ -1,5 +1,5 @@
 body {
-    background: snow;
+    color: white;
 }
 .navbar-nav {
     display: flex;
@@ -8,7 +8,7 @@ body {
     width: 100%;
 }
 .jumbotron {
-    background: url(../img/street.jpg);
+    background: url(../img/cafe.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
