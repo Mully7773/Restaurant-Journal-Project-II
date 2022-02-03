@@ -9,11 +9,12 @@ router.post('/', auth, async (req, res) => {
           restaurant_name: req.body.restaurant_name,
           order: req.body.order,
           rating: req.body.rating,
-          experience: req.body.rating
+          experience: req.body.experience
       });
   
         res.status(200).json(reviewData);
-     
+        //Send the user to the archives after they create a review
+        res.redirect('/api/archives')
     } catch (err) {
       res.status(400).json(err);
     }
@@ -26,11 +27,11 @@ router.post('/', auth, async (req, res) => {
       const reviewData = await Review.destroy({
         where: {
           id: req.params.id,
-        //   user_id: req.session.user_id,
+          user_id: req.session.user_id,
         },
       });
   
-      if (!projectData) {
+      if (!reviewData) {
         res.status(404).json({ message: 'No review found with this id!' });
         return;
       }
@@ -38,6 +39,30 @@ router.post('/', auth, async (req, res) => {
       res.status(200).json(projectData);
     } catch (err) {
       res.status(500).json(err);
+    }
+  });
+
+
+  //update a review via id
+  router.put(':/id', async (req, res) => {
+    try {
+      const updateReview = await Review.update(
+        {
+          restaurant_name: req.body.restaurant_name,
+          order: req.body.order,
+          rating: req.body.rating,
+          experience: req.body.experience,
+        },
+        {
+          where: {
+            id: req.params.id,
+          },
+        }
+      );
+      res.status(200).json("Review successfully updated!");
+    
+    } catch (err) {
+      res.status(400).json(err);
     }
   });
   
