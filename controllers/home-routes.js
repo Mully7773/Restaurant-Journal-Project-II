@@ -43,14 +43,14 @@ router.get('/',  (req, res) => {
 
 
 
-  // router.get('/reviews', async (req, res) => {
+  // router.get('/archives', async (req, res) => {
   //   try {
-  //     // Get all projects and JOIN with user data
+  //     // Get all reviews and JOIN with user data
   //     const reviewData = await Review.findAll({
   //       include: [
   //         {
   //           model: Review,
-  //           attributes: ['order', 'rating', 'experience' ],
+  //           attributes: ['restaurant_name, 'order', 'rating', 'experience' ],
   //         },
   //       ],
   //     });
@@ -59,15 +59,19 @@ router.get('/',  (req, res) => {
   //     const projects = reviewData.map((review) => review.get({ plain: true }));
   
   //     // Pass serialized data and session flag into template
-  //     res.render('index', { 
-  //       projects, 
+        // if (req.session.logged_in) {
+  //     res.render('archives', { 
+  //       reviews, 
   //       logged_in: req.session.logged_in 
   //     });
   //   } catch (err) {
   //     res.status(500).json(err);
   //   }
   // });
-  
+// }
+
+
+
   // router.get('/review/:id', async (req, res) => {
   //   try {
   //     const reviewData = await Review.findByPk(req.params.id, {
@@ -79,6 +83,8 @@ router.get('/',  (req, res) => {
   //       ],
   //     });
   
+
+
   //     const project = reviewData.get({ plain: true });
   
   //     res.render('review', {
