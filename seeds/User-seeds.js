@@ -3,7 +3,6 @@ const { User } = require('../models');
 
 const userData = [
   {
-    // Don't need user_id because it's auto-incrementing as a primary key
     user_name: "Billy Beaver",
     email: "Billy@billy.com",
     password: "billy123"
