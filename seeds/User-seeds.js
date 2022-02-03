@@ -3,19 +3,19 @@ const { User } = require('../models');
 
 const userData = [
   {
-    user_name: "Billy Beaver",
+    username: "Billy Beaver",
     email: "Billy@billy.com",
-    password: "billy123"
+    password: "$2b$12$xH3AWfhCEITn1zQfv6wt3.ibqdGz1.ebGO7ZFppMArLOwNW0sKHc."
   },
   {
-    user_name: "Tammy Termite",
+    username: "Tammy Termite",
     email: "Tammy@tammy.com",
-    password: "tammy123"
+    password: "$2b$12$mvJlTKrcd0eTmrFK0iGFpuJZF4N52R274zMuIGpmwZdKl8325xUjO"
   },
   {
-    user_name: "Freddy Fungus",
+    username: "Freddy Fungus",
     email: "Freddy@freddy.com",
-    password: "freddy123"
+    password: "$2b$12$TvzQq5M7QPYbkDcBGiNxIuR9TCBGcLLm9GYDeak7bsfpcDZK2Dxre"
   }
 ]
 const seedUser = () => User.bulkCreate(userData);

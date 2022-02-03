@@ -29,6 +29,7 @@ router.post('/', async (req, res) => {
       const userData = await User.findOne({ where: { email: req.body.email } });
   
       if (!userData) {
+        console.log("userData",userData)
         res
           .status(400)
           .json({ message: 'Wrong email or password. Please try again.' });
@@ -38,6 +39,7 @@ router.post('/', async (req, res) => {
       const validPassword = await userData.checkPassword(req.body.password);
   
       if (!validPassword) {
+        console.log("validPassword",validPassword)
         res
           .status(400)
           .json({ message: 'Wrong email or password. Please try again.' });
@@ -57,6 +59,7 @@ router.post('/', async (req, res) => {
     }
   });
   
+  //For logout
   router.post('/logout', (req, res) => {
     if (req.session.logged_in) {
       req.session.destroy(() => {
