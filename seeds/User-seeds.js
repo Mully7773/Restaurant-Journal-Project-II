@@ -3,16 +3,20 @@ const { User } = require('../models');
 
 const userData = [
   {
-    user_id: 1,
-    user_name: "Billy Beaver"
+    // Don't need user_id because it's auto-incrementing as a primary key
+    user_name: "Billy Beaver",
+    email: "Billy@billy.com",
+    password: "billy123"
   },
   {
-    review_id: 2,
-    review_note: "Tammy Termite"
+    user_name: "Tammy Termite",
+    email: "Tammy@tammy.com",
+    password: "tammy123"
   },
   {
-    review_id: 3,
-    review_note: "Freddy Fungus"
+    user_name: "Freddy Fungus",
+    email: "Freddy@freddy.com",
+    password: "freddy123"
   }
 ]
 const seedUser = () => User.bulkCreate(userData);
