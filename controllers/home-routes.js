@@ -11,7 +11,6 @@ router.get('/',  (req, res) => {
 
   //review page
   router.get('/reviews',  (req, res) => {
-    
     res.render('review')
   });
   
