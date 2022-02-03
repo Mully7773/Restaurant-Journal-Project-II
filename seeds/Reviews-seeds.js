@@ -5,21 +5,23 @@ const reviewData = [
   {
     review_id: 1,
     review_note: "This is the best logg I have ever had!",
-    oerder: "1 Logg",
+    //just restaurant_name here --don't need review_note because that's experience
+    //don't need id because it's auto-incrementing as a primary key
+    order: "1 Logg",
     rating: "a full star",
     experience: "maximum star"
   },
   {
     review_id: 2,
     review_note: "The logg is so good here!",
-    oerder: "2 Logg",
+    order: "2 Logg",
     rating: "2",
     experience: "best 2 stars"
   },
   {
     review_id: 3,
     review_note: "Third logg is the charm. Fantastic!",
-    oerder: "3 Logg",
+    order: "3 Logg",
     rating: "3 star",
     experience: "all three stars"
   }
