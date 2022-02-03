@@ -1,9 +1,15 @@
 body {
-background-color: aqua;
+    background: snow;
 }
 .navbar-nav {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     width: 100%;
+}
+.jumbotron {
+    background: url(../img/street.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
