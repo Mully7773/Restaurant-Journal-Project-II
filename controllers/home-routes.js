@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { raw } = require('express');
 const { Review, User } = require('../models');
 const auth = require('../utils/auth');
 
@@ -16,12 +17,17 @@ router.get('/',  (req, res) => {
   
 
   //archives
+  //render all the reviews
   router.get('/archives',  async (req, res) => {
-    // try {
-    //   const reviews = await Review => {
-
-    //   }
-    // }
+     try {
+      const reviews = await Review.findAll({
+      raw: true,
+      order: [["id", "DESC"]],
+    });
+    res.render("reviews", { reviewBody });
+    } catch (err) {
+        console.log("There's an error:", err);
+      }
     res.render('archives')
   });
 

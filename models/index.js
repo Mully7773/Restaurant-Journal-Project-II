@@ -3,11 +3,11 @@ const User = require('./User');
 const Review = require('./Review');
 
 User.hasMany(Review, {
-   foreignKey: 'id',
+   foreignKey: 'user_id',
 });
 
 Review.belongsTo(User, {
-    foreignKey: 'id'
+    foreignKey: 'user_id'
 });
 
 module.exports = { User, Review };
