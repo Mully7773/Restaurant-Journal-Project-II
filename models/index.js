@@ -2,9 +2,9 @@
 const User = require('./User');
 const Review = require('./Review');
 
-// User.hasMany(Review, {
-//    foreignKey: 'id',
-// });
+User.hasMany(Review, {
+   foreignKey: 'id',
+});
 
 Review.belongsTo(User, {
     foreignKey: 'id'

@@ -16,7 +16,12 @@ router.get('/',  (req, res) => {
   
 
   //archives
-  router.get('/archives',  (req, res) => {
+  router.get('/archives',  async (req, res) => {
+    // try {
+    //   const reviews = await Review => {
+
+    //   }
+    // }
     res.render('archives')
   });
 
