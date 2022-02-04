@@ -25,19 +25,23 @@ router.get('/',  (req, res) => {
       raw: true,
       order: [["id", "DESC"]],
     });
-    res.render("reviews", { reviewBody });
+    const reviewData = {
+      reviews
+    }
+    res.render("archives", reviewData);
+    // res.json(reviewData)
     } catch (err) {
         console.log("There's an error:", err);
       }
-    res.render('archives')
+
   });
 
 
   //User login
   //if the user is already logged in, redirect the request to the homepage
   router.get('/login',  (req, res) => {
-    if (req.session.logged_in) {
-      // res.redirect('/')
+    if (!req.session.logged_in) {
+      res.redirect('/')
       // return;
     }
     //else render the 'login' template
