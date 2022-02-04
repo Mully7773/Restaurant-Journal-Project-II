@@ -24,10 +24,10 @@ router.get('/',  (req, res) => {
   //User login
   //if the user is already logged in, redirect the request to the homepage
   router.get('/login',  (req, res) => {
-    // if (req.session.logged_in) {
-    //   res.redirect('/')
-    //   return;
-    // }
+    if (req.session.logged_in) {
+      // res.redirect('/')
+      // return;
+    }
     //else render the 'login' template
     res.render('login')
   });
@@ -57,7 +57,7 @@ router.get('/',  (req, res) => {
   //     });
   
   //     // Serialize data so the template can read it
-  //     const projects = reviewData.map((review) => review.get({ plain: true }));
+  //     const reviews = reviewData.map((review) => review.get({ plain: true }));
   
   //     // Pass serialized data and session flag into template
         // if (req.session.logged_in) {

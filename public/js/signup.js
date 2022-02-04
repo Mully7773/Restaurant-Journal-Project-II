@@ -17,7 +17,7 @@ const signUpFormHandler = async (event) => {
       // If successful, redirect the user to the create review page
       if (response.ok) {document.location.replace('/reviews');
       } else {
-        alert('Please fill out the entire form');
+        alert('Your password must be at least eight characters');
       }
     }
   };
