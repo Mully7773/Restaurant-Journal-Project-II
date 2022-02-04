@@ -8,8 +8,23 @@ body {
     width: 100%;
 }
 .jumbotron {
-    background: url(../img/cafe.png);
+    background: url(../img/cafe.png) no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    -webkit-background-composite: cover;
 }
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2);
+  }
+
+
+
