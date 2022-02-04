@@ -1,5 +1,5 @@
 body {
-    color: white;
+    color:black;
 }
 .navbar-nav {
     display: flex;
@@ -13,8 +13,13 @@ body {
     -webkit-background-composite: cover;
     font-size: larger;
     font: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 3px 3px 6px black;
+    font-family: 'Rowdies', cursive;
+    
+}
+#lostjumbo {
+    background-color: lightblue;
+    opacity: 0.8;
+    ;
 }
 
 .card {
