@@ -1,5 +1,8 @@
 const newReviewHandler = async (event) => {
     event.preventDefault();
+
+    // console.log(event.target.dataset.userid);
+    const user_id = event.target.dataset.userid;
   
     const restaurantName = document.querySelector('#restaurant-name').value.trim();
     const orderName = document.querySelector('#order-name').value.trim();
@@ -9,7 +12,7 @@ const newReviewHandler = async (event) => {
     if (restaurantName && orderName && yourRating && yourExperience) {
       const response = await fetch(`/api/reviews`, {
         method: 'POST',
-        body: JSON.stringify({ restaurantName, orderName, yourRating, yourExperience }),
+        body: JSON.stringify({ restaurantName, orderName, yourRating, yourExperience, user_id}),
         headers: {
           'Content-Type': 'application/json',
         },
@@ -23,4 +26,8 @@ const newReviewHandler = async (event) => {
     }
   };
 
-  document.querySelector('#submitReviewBtn').addEventListener('submit', newReviewHandler);
+  //document.querySelector('#submitReviewBtn').addEventListener('submit', newReviewHandler);
+  var x = document.querySelector('.reviewBtn')
+  //console.log(x)
+  x.addEventListener('click', newReviewHandler);
+  x.addEventListener('submit', newReviewHandler);

@@ -17,12 +17,13 @@ router.get('/', async (req, res) => {
 
 //Create new review
 router.post('/', withAuth, async (req, res) => {
+  console.log(req.body)
     try {
       const reviewData = await Review.create({
-          restaurant_name: req.body.restaurant_name,
-          order: req.body.order,
-          rating: req.body.rating,
-          experience: req.body.experience,
+          restaurant_name: req.body.restaurantName,
+          order: req.body.orderName,
+          rating: req.body.yourRating,
+          experience: req.body.yourExperience,
           user_id: req.body.user_id
       });
   
