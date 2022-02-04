@@ -6,6 +6,9 @@ const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 const { ImgurClient } = require('imgur');
 
+
+
+
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
