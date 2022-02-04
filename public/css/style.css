@@ -8,10 +8,9 @@ body {
     width: 100%;
 }
 .jumbotron {
-    background: url(../img/cafe.png);
+    background: url(../img/cafe.png) no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    -webkit-background-composite: cover;
 }
 
 
