@@ -29,7 +29,7 @@ router.post('/', withAuth, async (req, res) => {
   
         res.status(200).json(reviewData);
         //Send the user to the archives after they create a review
-        // res.redirect('/api/archives')
+        // res.redirect('/archives')
     } catch (err) {
       res.status(400).json(err);
     }
