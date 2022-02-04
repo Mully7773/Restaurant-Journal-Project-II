@@ -3,13 +3,15 @@ const { Review } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 
-//Get all reviews
-// router.get('/', async (req, res) => {
-//   try {
-//     const reviewData = await Review.findAll()
-//   }
-
-// })
+// Get all reviews
+router.get('/', async (req, res) => {
+  try {
+    const reviewData = await Review.findAll()
+    res.json(reviewData)
+  } catch (err) {
+      res.status(400).json(err);
+    }
+})
 
 
 

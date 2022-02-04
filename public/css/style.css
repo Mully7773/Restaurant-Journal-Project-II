@@ -11,8 +11,11 @@ body {
     background: url(../img/cafe.png) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-composite: cover;
+    font-size: larger;
+    font: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 3px 3px 6px black;
 }
-
 
 .card {
     /* Add shadows to create the "card" effect */
@@ -25,6 +28,4 @@ body {
   .card:hover {
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2);
   }
-
-
 
