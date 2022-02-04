@@ -12,7 +12,8 @@ router.get('/',  (req, res) => {
 
   //review page
   router.get('/reviews',  (req, res) => {
-    res.render('review')
+    // console.log(req.session.user_id);
+    res.render('review', {user_id:req.session.user_id})
   });
   
 
