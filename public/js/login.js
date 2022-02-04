@@ -14,7 +14,9 @@ const loginFormHandler = async (event) => {
         headers: { 'Content-Type': 'application/json' },
       });
       // If successful, redirect the user to the create review page
-      if (response.ok) {document.location.replace('/reviews');
+      
+      if (response.ok) {
+        document.location.replace('/reviews');
       } else {
         alert('Please check your email or password');
       }
