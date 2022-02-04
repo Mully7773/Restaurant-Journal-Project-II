@@ -6,17 +6,18 @@
   </div>
 </div> 
       
-
-{{!-- {{#each review}}  This should be used to cycle through each review --}}
+{{!-- This should be used to cycle through each review --}}
 <div class="row mb-5">
   <div class="col-2"></div>
   <div class="col-10">
-    <div class="card mt-4" id="reviewCard" style="width: 80%;">
+    <div id="center_box" class="card mt-4" id="reviewCard" style="width: 80%;">
       <div class="card-body">
           <p class="pl-4 pr-4 pb-2 text-center">test</p>
-            {{!-- {{this.reviewBody}}   This needs to go in the <p></p> eventually --}} 
+{{#each review}}  
+            {{this.reviewBody}}   
+{{/each}}
+            {{!-- This needs to go in the <p></p> eventually  --}}
       </div>
     </div>
   </div>
 </div>
-{{!-- {{/each}} --}}
