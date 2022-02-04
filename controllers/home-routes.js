@@ -42,7 +42,7 @@ router.get('/',  (req, res) => {
   router.get('/login',  (req, res) => {
     if (!req.session.logged_in) {
       res.redirect('/')
-      // return;
+      return;
     }
     //else render the 'login' template
     res.render('login')
