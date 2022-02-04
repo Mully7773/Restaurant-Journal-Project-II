@@ -1,13 +1,32 @@
 {{!-- Code for sign up template --}}
+<div class="jumbotron jumbotron-fluid justify-content-center">
+  <div class="container mt-5">
+    <h1 class="display-4 text-center">Sign Up</h1>
+    <p class="lead text-center">Please fill in the form below</p>
+  </div>
+</div> 
 
-<h2>Fill this out to set up your login information!</h2>
+<div class="card mx-auto border border-primary justify-content-center p-4 mt-5" style="width: 35rem;">
+      <form>
+  <div class="form-group ">
+    <label>Username</label>
+    <input type="text" class="form-control" id="signup-username" aria-describedby="username" placeholder="Enter your username">
+    <small class="form-text text-muted"></small>
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" class="form-control" id="signup-email" placeholder="Enter your email address">
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="password" class="form-control" id="signup-password" placeholder="Enter your password">
+  </div>
+  <div class="form-group">
+  <div class= "col text-center">
+  <button type="submit" id="submitReviewBtn" class="btn btn-primary m-3 signup-form">Sign Up</button>
+  </div>
+</form>
+</div>
 
-<form action="/signup">
-  <label for="firstname">First name:</label><br>
-  <input type="text" id="firstName" name="firstName" value="Frist name here!"><br>
-  <label for="lastname">Last name:</label><br>
-  <input type="text" id="lastName" name="lastName" value="Last name here!"><br><br>
-  <input type="submit" value="SUBMIT!">
-</form> 
-<script src="./js/sign-up"></script>
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/signup"!</p>
+<script src="./js/signup.js"></script>
+

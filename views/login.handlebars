@@ -1,14 +1,28 @@
 {{!-- Template for login page --}}
-<h2>Login Page</h2>
-
-<form>
-  <label for="email">E-mail:</label><br>
-  <input type="email" id="email" name="email" value="Enter your login email!"><br>
-  <label for="lname">Password:</label><br>
-  <input type="password" id="passWord" name="passWord" value=""><br><br>
-  <input type="submit" class="login-form" value="SUBMIT">
-</form> 
+<div class="jumbotron jumbotron-fluid justify-content-center">
+  <div class="container mt-5">
+    <h1 class="display-4 text-center">Login</h1>
+    <p class="lead text-center">Please login below</p>
+  </div>
+</div> 
 
 
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/login".</p>
+<div class="card mx-auto border border-primary justify-content-center p-4 mt-5" style="width: 35rem;">
+      <form>
+  <div class="form-group ">
+    <label>Email</label>
+    <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter your email">
+    <small class="form-text text-muted"></small>
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="password" class="form-control" id="passWord" placeholder="Enter your password">
+  </div>
+  <div class="form-group">
+  <div class= "col text-center">
+  <button type="submit" id="submitReviewBtn" class="btn btn-primary m-3 login-form">Submit</button>
+  </div>
+</form>
+</div>
+
 <script src="./js/login.js"></script>
