@@ -4,37 +4,56 @@
     <h1 class="display-4 text-center">Your Reviews</h1>
     <p class="lead text-center">More text if needed--otherwise delete.</p>
   </div>
-</div> 
-      
-<div class="container container-fluid row justify-content-center mx-auto my-3">
-  {{reviews.length}}
- {{#each reviews}}
-<div class="row mb-5">
-  <div class="col-2"></div>
-  <div class="col-10">
-    <div data-aos="flip-up" class="card mt-4" id="reviewCard" style="width: 80%;">
-      <div class="card-body">
-          <p class="pl-4 pr-4 pb-2 text-center"></p>
-          <p class="pl-4 pr-4 pb-2 text-center fs-3">Your restaurant:</p>
-            <p class="pl-4 pr-4 pb-2 text-center fw-bold"> {{this.restaurant_name}}</p>  
-            <p class= "pl-4 pr-4 pb-2 text-center fs-3">Your order:</p>
-            <p class="pl-4 pr-4 pb-2 text-center fw-bold"> {{this.order}}</p>
-            <p class="pl-4 pr-4 pb-2 text-center fs-3">Your rating:</p>
-            <p class="pl-4 pr-4 pb-2 text-center fw-bold"> {{this.rating}}</p>
-            <p class="pl-4 pr-4 pb-2 text-center fs-3">Your experience:</p>
-            <p class="pl-4 pr-4 pb-2 text-center fw-bold"> {{this.experience}}</p>
-      </div>
-    </div>
-  </div>
-</div>
-{{/each}}
-{{!-- {
-		"id": 14,
-		"restaurant_name": "asdf",
-		"order": "asdf",
-		"rating": "asdf",
-		"experience": "chekcn",
-		"user_id": 1
-	}, --}}
 </div>
 
+<div class="container container-fluid row justify-content-center mx-auto my-3">
+  <div class="row mb-5">
+    <div class="col-2"></div>
+    <div class="col-10">
+      <div style="width: 80%;">
+        <div class="card-body">
+          <h5 class="card-title text-center">Want to write another review?</h5>
+          <p class="card-text text-center">Click the button to go back!</p>
+          <div class="text-center">
+            <a href="/reviews" class="btn btn-primary mx-auto">Back</a>
+             <h3 class="m-2 pt-5">Current Review Count: {{reviews.length}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  
+
+      <div class="container container-fluid row justify-content-center mx-auto my-3">
+        {{#each reviews}}
+        <div class="row mb-5">
+          <div class="col-2"></div>
+          <div class="col-10">
+            <div data-aos="flip-up" class="card mt-4" id="reviewCard" style="width: 80%;">
+              <div class="card-body">
+                <img class="img-fluid d-block mx-auto max-width: 100%" src="/img/6580603_preview.png"
+                  alt="A fancy underline">
+                <p class="pl-4 pr-4 pb-2 text-center fs-3">Your restaurant:</p>
+                <p class="pl-4 pr-4 pb-2 text-center fw-bold"> {{this.restaurant_name}}</p>
+                <p class="pl-4 pr-4 pb-2 text-center fs-3">Your order:</p>
+                <p class="pl-4 pr-4 pb-2 text-center fw-bold"> {{this.order}}</p>
+                <p class="pl-4 pr-4 pb-2 text-center fs-3">Your rating:</p>
+                <p class="pl-4 pr-4 pb-2 text-center fw-bold"> {{this.rating}}</p>
+                <p class="pl-4 pr-4 pb-2 text-center fs-3">Your experience:</p>
+                <p class="pl-4 pr-4 pb-2 text-center fw-bold"> {{this.experience}}</p>
+                <img class="img-fluid d-block mx-auto max-width: 100%" src="/img/6580603_preview-upside-down.png"
+                  alt="A fancy underline">
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+        {{!-- {
+        "id": 14,
+        "restaurant_name": "asdf",
+        "order": "asdf",
+        "rating": "asdf",
+        "experience": "chekcn",
+        "user_id": 1
+        }, --}}
+      </div>
