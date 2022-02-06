@@ -1,6 +1,4 @@
-body {
-    color:black;
-}
+
 .navbar-nav {
     display: flex;
     align-items: flex-end;
@@ -14,12 +12,12 @@ body {
     font-size: larger;
     font: bold;
     font-family: 'Rowdies', cursive;
-    
+    color: black
 }
 #lostjumbo {
     background-color: lightblue;
     opacity: 0.8;
-    ;
+    
 }
 
 .card {
@@ -39,5 +37,16 @@ body {
       font-family: 'Libre Baskerville', serif;
       font-weight: 600;
       font-size: 100%;
+  }
+
+  .x-button {
+    transition-duration: 0.3s;
+    font-family: 'Libre Baskerville', serif;
+    
+  }
+
+  .x-button:hover {
+    background-color: #030503;
+    color: white;
   }
   

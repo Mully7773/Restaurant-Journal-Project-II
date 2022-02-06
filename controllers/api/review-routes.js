@@ -29,7 +29,7 @@ router.post('/', withAuth, async (req, res) => {
   
         res.status(200).json(reviewData);
         //Send the user to the archives after they create a review
-        // res.redirect('/archives')
+        // res.redirect('/archives') this still crashes the app
     } catch (err) {
       res.status(400).json(err);
     }
@@ -51,8 +51,9 @@ router.post('/', withAuth, async (req, res) => {
         return;
       }
   
-      res.status(200).json(projectData);
+      res.status(200).json(reviewData);
     } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
   });
