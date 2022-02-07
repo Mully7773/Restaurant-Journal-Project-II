@@ -45,13 +45,17 @@ router.post('/', async (req, res) => {
           .json({ message: 'Wrong email or password. Please try again.' });
         return;
       }
-  
+  // console.log(userData);
+  const user = userData.get({
+    plain: true,
+  });
+  console.log(user);
       req.session.save(() => {
         req.session.logged_in = true;
-        req.session.user_id = userData.id;
+        req.session.user_id = user.id;
         req.session.current_user = true;
         
-        res.status(200).json({ user: userData, message: 'You are now logged in!' });
+        res.status(200).json({ user: user, message: 'You are now logged in!' });
       });
   
     } catch (err) {

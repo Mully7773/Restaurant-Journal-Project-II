@@ -12,7 +12,7 @@ router.get('/',  (req, res) => {
 
   //review page
   router.get('/reviews',  (req, res) => {
-    // console.log(req.session.user_id);
+    console.log(req.session.user_id);
     // User.findByPk();
     res.render('review', {user_id:req.session.user_id})
   });
