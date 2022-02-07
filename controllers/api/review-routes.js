@@ -24,7 +24,7 @@ router.post('/', withAuth, async (req, res) => {
           order: req.body.orderName,
           rating: req.body.yourRating,
           experience: req.body.yourExperience,
-          user_id: req.body.user_id
+          user_id: 1
       });
   
         res.status(200).json(reviewData);
@@ -37,13 +37,14 @@ router.post('/', withAuth, async (req, res) => {
 
 
   //Delete a review
-  router.delete('/:id', withAuth, async (req, res) => {
-    console.log(req.params);
+  router.delete('/:id', async (req, res) => {
+    console.log(req.params, req.session.user_id);
+  
     try {
       const reviewData = await Review.destroy({
         where: {
           id: req.params.id,
-          user_id: req.session.user_id,
+          // user_id: req.session.user_id,
         },
       });
   
