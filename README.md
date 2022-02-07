@@ -46,3 +46,12 @@ To install this program you will need to run the following command:
 
 An online journal application to help you remember your experience at a restaurant!
 [Resternal](https://morning-island-13574.herokuapp.com/)
+
+To use the app, please sign up using the following credentials:
+username: Bill
+email: Billy@billy.com
+password: billy123
+
+You can then log in using the following credentials:
+email: Billy@billy.com
+password: billy123
