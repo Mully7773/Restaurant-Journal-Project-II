@@ -19,6 +19,8 @@
  :palm_tree: Eric DeWald
  :ocean: Justin Campa
 
+## Demo Video:
+
 ## Technologies
 This application utilizes the following technologies:
 
