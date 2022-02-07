@@ -69,4 +69,18 @@
     background: url(../img/marjan-blan-marjanblan-_kUxT8WkoeY-unsplash.jpg) no-repeat center center fixed;
     background-size: cover;
   }
+
+  .thyReviews{
+    font-size: 86px;
+  }
+
+  #logged-in-text {
+      color: rgb(26, 139, 26);
+      font-size:large;
+      display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+  }
   
