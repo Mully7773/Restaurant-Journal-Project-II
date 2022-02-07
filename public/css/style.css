@@ -52,4 +52,21 @@
     background-color: #030503;
     color: white;
   }
+
+  span {
+      font-style: italic;
+  }
+
+  #subtext {
+      font-size: 36px;
+  }
+
+  #app-name {
+      font-size: 72px;
+  }
+
+  #login-signup-body {
+    background: url(../img/marjan-blan-marjanblan-_kUxT8WkoeY-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
   
