@@ -1,22 +1,22 @@
 {{!-- Code for past reviews --}}
-<div class="jumbotron jumbotron-fluid justify-content-center">
-  <div class="container mt-5">
-    <h1 class="display-4 text-center">Your Reviews</h1>
-    <p class="lead text-center">More text if needed--otherwise delete.</p>
-  </div>
+<div class="jumbotron jumbotron-fluid justify-content-center h-25">
 </div>
 
+<body id="login-signup-body">
 <div class="container container-fluid row justify-content-center mx-auto my-3">
   <div class="row mb-5">
     <div class="col-2"></div>
     <div class="col-10">
       <div style="width: 80%;">
         <div class="card-body">
-          <h5 class="card-title text-center mt-5">Want to write another review?</h5>
+          <div class="container">
+    <h1 class="display-4 text-center thyReviews">Your Reviews</h1>
+  </div>
+          <h5 class="card-title text-center mt-3">Want to write another review?</h5>
           <p class="card-text text-center">Click the button to go back!</p>
           <div class="text-center">
             <a href="/reviews" class="btn btn-primary mx-auto">Back</a>
-             <h3 class="m-2 pt-5">Current Review Count: {{reviews.length}}</h3>
+             <h3 class="m-1 pt-5">Current Review Count: {{reviews.length}}</h3>
           </div>
         </div>
       </div>
@@ -24,22 +24,26 @@
 </div>
 </div> 
 
-      <div class="container container-fluid row justify-content-center mx-auto my-3">
+      <div class="container container-fluid row justify-content-center mx-auto my-2">
         {{#each reviews}}
         <div class="row mb-5">
           <div class="col-2"></div>
           <div class="col-10">
             <div data-aos="flip-up" class="card mt-4" id="reviewCard" style="width: 80%;">
               <div class="card-body">
+                <div class="row pull-right">
+          <button class="btn btn-sm x-button" data-id="{{reviews.id}}">X</button>
+          {{!-- data-userid="{{user_id}}" --}}
+        </div>
                 <img class="img-fluid d-block mx-auto max-width: 100%" src="/img/6580603_preview.png"
                   alt="A fancy underline">
-                <h1 class="pl-4 pr-4 pb-2 text-center fs-3">Your Restaurant</h1>
+                <h1 class="classy pl-4 pr-4 pb-2 text-center fs-3">Your Restaurant</h1>
                 <h5 class="pl-4 pr-4 pb-2 text-center"> {{this.restaurant_name}}</h5>
-                <h1 class="pl-4 pr-4 pb-2 text-center fs-3">Your Order</h1>
+                <h1 class="classy pl-4 pr-4 pb-2 text-center fs-3">Your Order</h1>
                 <h5 class="pl-4 pr-4 pb-2 text-center"> {{this.order}}</h5>
-                <h1 class="pl-4 pr-4 pb-2 text-center fs-3">Your Rating</h1>
+                <h1 class="classy pl-4 pr-4 pb-2 text-center fs-3">Your Rating</h1>
                 <h5 class="pl-4 pr-4 pb-2 text-center"> {{this.rating}}</h5>
-                <h1 class="pl-4 pr-4 pb-2 text-center fs-3">Your Experience</h1>
+                <h1 class="classy pl-4 pr-4 pb-2 text-center fs-3">Your Experience</h1>
                 <h5 class="pl-4 pr-4 pb-2 text-center"> {{this.experience}}</h5>
                 <img class="img-fluid d-block mx-auto max-width: 100%" src="/img/6580603_preview-upside-down.png"
                   alt="A fancy underline">
@@ -57,3 +61,6 @@
         "user_id": 1
         }, --}}
       </div>
+      </body>
+
+      <script src="./js/delete.js"></script>

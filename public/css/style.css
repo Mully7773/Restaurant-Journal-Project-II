@@ -1,6 +1,4 @@
-body {
-    color:black;
-}
+
 .navbar-nav {
     display: flex;
     align-items: flex-end;
@@ -14,12 +12,12 @@ body {
     font-size: larger;
     font: bold;
     font-family: 'Rowdies', cursive;
-    
+    color: black
 }
 #lostjumbo {
     background-color: lightblue;
     opacity: 0.8;
-    ;
+    
 }
 
 .card {
@@ -34,4 +32,55 @@ body {
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2);
   }
 
+
+  .classy {
+      font-family: 'Libre Baskerville', serif;
+      font-weight: 600;
+      font-size: 100%;
+  }
+
+  .x-button {
+    transition-duration: 0.3s;
+    font-family: 'Libre Baskerville', serif;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .x-button:hover {
+    background-color: #030503;
+    color: white;
+  }
+
+  span {
+      font-style: italic;
+  }
+
+  #subtext {
+      font-size: 36px;
+  }
+
+  #app-name {
+      font-size: 72px;
+  }
+
+  #login-signup-body {
+    background: url(../img/marjan-blan-marjanblan-_kUxT8WkoeY-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .thyReviews{
+    font-size: 86px;
+  }
+
+  #logged-in-text {
+      color: rgb(26, 139, 26);
+      font-size:large;
+      display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+  }
   
