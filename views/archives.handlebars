@@ -32,7 +32,8 @@
             <div data-aos="flip-up" class="card mt-4" id="reviewCard" style="width: 80%;">
               <div class="card-body">
                 <div class="row pull-right">
-          <button class="btn pull-right x-button">X</button>
+          <button class="btn btn-sm x-button" data-id="{{reviews.id}}">X</button>
+          {{!-- data-userid="{{user_id}}" --}}
         </div>
                 <img class="img-fluid d-block mx-auto max-width: 100%" src="/img/6580603_preview.png"
                   alt="A fancy underline">
@@ -60,3 +61,5 @@
         "user_id": 1
         }, --}}
       </div>
+
+      <script src="./js/delete.js"></script>

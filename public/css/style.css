@@ -42,7 +42,10 @@
   .x-button {
     transition-duration: 0.3s;
     font-family: 'Libre Baskerville', serif;
-    
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
   }
 
   .x-button:hover {
