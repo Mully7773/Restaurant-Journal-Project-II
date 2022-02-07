@@ -14,18 +14,6 @@
     font-family: 'Rowdies', cursive;
     color: black
 }
-h1 {
-  background-color: lightblue;
-    opacity: 0.8;
-    margin-bottom: auto;
-}
-h2 {
-  
-  background-color: lightblue;
-    opacity: 0.8;
-    margin: auto;
-   
-}
 
 footer {
   text-shadow: 2px 2px snow;
@@ -74,10 +62,22 @@ footer {
 
   #subtext {
       font-size: 36px;
+      background-color: lightblue;
+      opacity: 0.8;
+      margin-bottom: auto;
+  }
+
+  #subtext-two {
+    background-color: lightblue;
+    opacity: 0.8;
+    margin-bottom: auto;
   }
 
   #app-name {
       font-size: 72px;
+      background-color: lightblue;
+      opacity: 0.8;
+      margin-bottom: auto;
   }
 
   #login-signup-body {
