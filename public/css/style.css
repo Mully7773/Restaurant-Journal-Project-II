@@ -14,11 +14,26 @@
     font-family: 'Rowdies', cursive;
     color: black
 }
-#lostjumbo {
-    background-color: lightblue;
+h1 {
+  background-color: lightblue;
     opacity: 0.8;
-    
+    margin-bottom: auto;
 }
+h2 {
+  
+  background-color: lightblue;
+    opacity: 0.8;
+    margin: auto;
+   
+}
+
+footer {
+  text-shadow: 2px 2px snow;
+}
+
+    
+    
+
 
 .card {
     /* Add shadows to create the "card" effect */
