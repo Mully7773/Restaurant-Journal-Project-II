@@ -1,4 +1,5 @@
 # Restaurant-Journal-Project-II
+![resternal](https://user-images.githubusercontent.com/16121983/152859913-07e401b8-5726-4532-8ee4-ebf828e11275.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
@@ -20,7 +21,7 @@
  :ocean: Justin Campa
 
 ## Demo Video:
-
+https://drive.google.com/file/d/1S7xKw67RNSCASPT-L5LBsIKK74aL4TtL/view
 ## Technologies
 This application utilizes the following technologies:
 
