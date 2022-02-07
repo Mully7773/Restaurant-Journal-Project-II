@@ -24,7 +24,10 @@ const sess = {
     secret: 'Super secret secret',
     cookie: {
       maxAge: 85000,
-      name: 'uniqueID'
+      name: 'uniqueID',
+      httpOnly: true,
+      secure: false,
+      sameSite: "strict"
     },
     resave: false,
     saveUninitialized: true,
