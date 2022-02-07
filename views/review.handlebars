@@ -1,15 +1,15 @@
 {{!-- Code for review template --}}
 
-<div class="jumbotron jumbotron-fluid justify-content-center">
-  <div class="container mt-5">
-    <h1 class="display-4 text-center">Write a Review</h1>
-    <p class="lead text-center">More text if needed--otherwise delete.</p>
-  </div>
+<div class="jumbotron jumbotron-fluid justify-content-center h-25">
 </div> 
 
+<body id="login-signup-body">
 <div class="container container-fluid row justify-content-center mx-auto my-3">
 <div class="card mx-auto border border-primary justify-content-center p-4 mt-5 mb-5" style="width: 35rem;">
       <form>
+        <div class="container mt-3 mb-5">
+    <h1 class="display-4 text-center">Write a Review</h1>
+  </div>
   <div class="form-group">
     <label>Where did you go?</label>
     <input type="text" class="form-control mt-2 mb-2" id="restaurant-name" aria-describedby="restaurantName" placeholder="Enter a restaurant name...">
@@ -28,9 +28,10 @@
     <input type="text" class="form-control mt-2 mb-2" id="your-experience" placeholder="Loved it!">
   </div>
   <div class= "col text-center">
-  <button type="submit" id="submitReviewBtn mt-2 mb-2" class="btn btn-lg btn-primary m-3 reviewBtn " data-userid="{{user_id}}">Submit</button>
+  <button type="submit" id="submitReviewBtn" class="btn btn-lg btn-primary reviewBtn mt-3 mb-3" data-userid="{{user_id}}">Submit</button>
   </div>
 </form>
 </div>
 </div>
+</body>
 <script src="./js/review.js"></script>

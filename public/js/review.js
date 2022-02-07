@@ -31,3 +31,7 @@ const newReviewHandler = async (event) => {
   //console.log(x)
   x.addEventListener('click', newReviewHandler);
   x.addEventListener('submit', newReviewHandler);
+
+
+
+  

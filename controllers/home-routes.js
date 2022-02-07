@@ -13,6 +13,7 @@ router.get('/',  (req, res) => {
   //review page
   router.get('/reviews',  (req, res) => {
     // console.log(req.session.user_id);
+    // User.findByPk();
     res.render('review', {user_id:req.session.user_id})
   });
   
@@ -40,10 +41,10 @@ router.get('/',  (req, res) => {
   //User login
   //if the user is already logged in, redirect the request to the homepage
   router.get('/login',  (req, res) => {
-    if (!req.session.logged_in) {
-      res.redirect('/')
-      return;
-    }
+    // if (!req.session.logged_in) {
+    //   res.redirect('/')
+    //   return;
+    // }
     //else render the 'login' template
     res.render('login')
   });
