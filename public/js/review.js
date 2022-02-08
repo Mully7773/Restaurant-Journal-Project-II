@@ -26,9 +26,8 @@ const newReviewHandler = async (event) => {
     }
   };
 
-  //document.querySelector('#submitReviewBtn').addEventListener('submit', newReviewHandler);
+ 
   var x = document.querySelector('.reviewBtn')
-  //console.log(x)
   x.addEventListener('click', newReviewHandler);
   x.addEventListener('submit', newReviewHandler);
 

@@ -1,7 +1,6 @@
-//front-end code for sign up
 const signUpFormHandler = async (event) => {
     event.preventDefault();
-    // Grab the values from the login form
+    
     
     const username = document.querySelector('#signup-username').value.trim();
     const email = document.querySelector('#signup-email').value.trim();
