@@ -1,6 +1,4 @@
 // const { response } = require("express");
-
-//front-end code for logging out
 const logoutHandler = async (event) => {
     event.preventDefault();
 
